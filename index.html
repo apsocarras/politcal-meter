@@ -6,43 +6,49 @@
   <title>Political Meter</title>
 </head>
 <body>
-  <h1>Take this quiz to determine your political stance</h1>
+  <h2>Please answer the following with "yes" or "no":</h2>
   <form>
     <ol>
-      <li>
-        <h3>Do you support raising taxes for public services?</h3>
-        <div>
-          <input type="radio" id="yes" name="question1" value="huey"
-                 checked>
-          <label for="yes">yes</label>
-        </div>
-    
-        <div>
-          <input type="radio" id="dewey" name="drone" value="dewey">
-          <label for="no">no</label>
-        </div>
+      <li> 
+        <label for="question1input">Do you support raising taxes for public services?</label>
+        <input id="question1input" type="text" name ="question1input"> 
       </li>
-      <li>
-        <h3>Do you support increasing security at the border?</h3>
-        <div>
-          <input type="radio" id="yes" name="question1" value="huey"
-                 checked>
-          <label for="yes">yes</label>
-        </div>
-    
-        <div>
-          <input type="radio" id="dewey" name="drone" value="dewey">
-          <label for="no">no</label>
-        </div>
+      <li> 
+        <label for="question2input">Do you support increasing border security?</label>
+        <input id="question2input" type="text" name ="question2input"> 
       </li>
-
-
-
-
+      <li> 
+        <label for="question3input">Do you support Roe vs. Wade?</label>
+        <input id="question3input" type="text" name ="question3input"> 
+      </li>
+      <li> 
+        <label for="question4input">Are you pro gun control?</label>
+        <input id="question4input" type="text" name ="question4input"> 
+      </li>
+      <!-- <li> 
+        <label for="question5input">Do you want more religious liberty laws?</label>
+        <input id="question5input" type="text" name ="question5input"> 
+      </li> -->
     </ol>
+
+    <button type="submit">Submit</button>
   </form>
 
+  <div id="liberal" class="hidden">
+    <p>You are probably a liberal.</p>
+  </div>
+  
+  <div id="conservative" class="hidden">
+    <p>You are probably a conservative.</p>
+  </div>
 
+  <div id="moderate" class="hidden">
+    <p>You are probably a moderate.</p>
+  </div>
 
+  <div id="error" class="hidden">
+    <p>Error: Please enter "yes" or "no" in each box.</p>
+  </div>
 
 </body>
+</html>
